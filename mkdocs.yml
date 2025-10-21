@@ -1,0 +1,57 @@
+site_name: SeedPro – Plataforma de Custos, Preços e Margens
+site_description: Documentação oficial da ferramenta SeedPro
+site_author: Daniel Whitaker
+theme:
+  name: material
+  logo: "img/SSF4.png"
+  language: pt
+  palette:
+    primary: green
+    accent: lime
+ 
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - toc.integrate
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+nav:
+  - Início: index.md
+  - Introdução:
+      - Objetivo: 1_introducao/objetivo.md
+      - Público-alvo: 1_introducao/publico_alvo.md
+      - Estrutura da Ferramenta: 1_introducao/estrutura_ferramenta.md
+  - Templates:
+      - Arquivo Template: 2_templates/arquivo_template.md
+      - Orientações de Uso: 2_templates/orientacoes_uso.md
+      - Checklist de Completude: 2_templates/checklist_completude.md
+  - Bloco 1 – Estimativa de Custos:
+      - Visão Geral: 3_estimativa_custos/overview.md
+      - Inputs do Template: 3_estimativa_custos/inputs_template.md
+      - Cálculo de Volumes: 3_estimativa_custos/calculo_volumes.md
+      - Metodologia Aplicada: 3_estimativa_custos/metodologia.md
+      - Resultados Calculados: 3_estimativa_custos/resultados_custos.md
+      - Exemplos Práticos: 3_estimativa_custos/exemplos_praticos.md
+  - Blocos 2 e 3:
+      - Cálculo da Receita: 4_blocos/bloco2_receita.md
+      - Relatórios: 4_blocos/bloco3_relatorios.md
+  - Anexos:
+      - Glossário: 5_anexos/glossario.md
+      - Referências: 5_anexos/referencias.md
